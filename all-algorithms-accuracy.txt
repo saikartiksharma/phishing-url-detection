@@ -1,0 +1,103 @@
+Dataset loaded successfully.
+Training Decision Tree...
+
+--- Decision Tree Evaluation ---
+Accuracy: 0.9262
+Confusion Matrix:
+ [[11038   574]
+ [  734  5384]]
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.94      0.95      0.94     11612
+           1       0.90      0.88      0.89      6118
+
+    accuracy                           0.93     17730
+   macro avg       0.92      0.92      0.92     17730
+weighted avg       0.93      0.93      0.93     17730
+
+Log Loss: 2.1835
+Specificity (True Negative Rate): 0.9506
+Decision Tree model trained and saved.
+
+Training Random Forest...
+
+--- Random Forest Evaluation ---
+Accuracy: 0.9411
+Confusion Matrix:
+ [[11095   517]
+ [  528  5590]]
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.95      0.96      0.96     11612
+           1       0.92      0.91      0.91      6118
+
+    accuracy                           0.94     17730
+   macro avg       0.93      0.93      0.93     17730
+weighted avg       0.94      0.94      0.94     17730
+
+Log Loss: 0.2884
+Specificity (True Negative Rate): 0.9555
+Random Forest model trained and saved.
+
+Training Linear SVM...
+
+--- Linear SVM Evaluation ---
+Accuracy: 0.9037
+Confusion Matrix:
+ [[10781   831]
+ [  877  5241]]
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.92      0.93      0.93     11612
+           1       0.86      0.86      0.86      6118
+
+    accuracy                           0.90     17730
+   macro avg       0.89      0.89      0.89     17730
+weighted avg       0.90      0.90      0.90     17730
+
+Log Loss not available (model does not have predict_proba).
+Specificity (True Negative Rate): 0.9284
+Linear SVM model trained and saved.
+
+Training SVM (RBF Kernel)...
+
+--- SVM (RBF Kernel) Evaluation ---
+Accuracy: 0.9217
+Confusion Matrix:
+ [[10803   809]
+ [  579  5539]]
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.95      0.93      0.94     11612
+           1       0.87      0.91      0.89      6118
+
+           1       0.87      0.91      0.89      6118
+
+
+    accuracy                           0.92     17730
+   macro avg       0.91      0.92      0.91     17730
+weighted avg       0.92      0.92      0.92     17730
+
+Log Loss: 0.2068
+Specificity (True Negative Rate): 0.9303
+SVM (RBF Kernel) model trained and saved.
+
+Generating ROC curves...
+ROC curves plot generated.
+
+Generating feature importance plot...
+Feature importance plot generated.
+Generating feature importance plot...
+Feature importance plot generated.
+
+Feature importance plot generated.
+
+
+--- Script Finished ---
+--- Script Finished ---
+All successfully trained models evaluated and saved.
+Generated visualizations: confusion matrices (per model), ROC curves, and feature importance plot (for tree models).
